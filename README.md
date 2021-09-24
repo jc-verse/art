@@ -4,7 +4,7 @@ Yes, I do art. Yes, I like SVG.
 
 ## Avatar
 
-![avatar](./avatar.svg)
+![avatar](./logo/avatar.svg)
 
 ## A (mysterious) monogram
 
@@ -12,4 +12,4 @@ Yes, I do art. Yes, I like SVG.
 
 ## My logo
 
-![logo](./logo.svg)
+![logo](./logo/logo.svg)
