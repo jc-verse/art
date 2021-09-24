@@ -1,0 +1,18 @@
+:root {
+  --primary: #39cac4;
+  --primary-dark: #2ca39e;
+  --primary-darker: #1b6663;
+  --primary-light: #62d5d0;
+  --primary-lighter: #9fe5e2;
+  --red: #ca393e;
+  --orange: #ca7d39;
+  --yellow: #cac539;
+  --lime: #86ca39;
+  --green: #3eca39;
+  --aqua: #39ca7d;
+  --navy: #3986ca;
+  --blue: #393eca;
+  --purple: #7d39ca;
+  --pink: #c539ca;
+  --magenta: #ca3986;
+}
