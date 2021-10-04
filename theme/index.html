@@ -14,12 +14,12 @@
       font-size: large;
       font-weight: bold;
       font-family: Arial, Helvetica, sans-serif;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
       transition: 0.2s;
     }
     .box:hover {
       transform: scale(1.03);
-      box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 9px 11px 0 rgba(0, 0, 0, 0.2); */
       cursor: pointer;
     }
     .size3x3 {
@@ -118,37 +118,52 @@
     .rotate330:hover {
       transform: rotate(330deg) translateY(-250px) scale(1.03);
     }
+    .hover-expand {
+      flex: 1;
+      flex-grow: 1;
+    }
+    .hover-expand:hover {
+      transform: scale(1);
+      flex: 3;
+    }
+    .expand-box {
+      display: flex;
+      flex-direction: row;
+      width: 440px;
+      height: 100px;
+      line-height: 80px;
+    }
   </style>
   <div :root>
     <div style="display:flex;flex-direction:row;">
       <div class="box size3x3" style="font-size:x-large;background-color:var(--primary)">#39cac4</div>
       <div>
-        <div style="display:flex;flex-direction:row;">
-          <div class="box size1x1" style="background-color:var(--primary-lighter)">#9fe5e2</div>
-          <div class="box size3x1" style="background-color:var(--primary-lighter)">#9fe5e2</div>
+        <div class="expand-box">
+          <div class="box hover-expand" style="background-color:var(--primary-lighter)">#9fe5e2</div>
+          <div class="box hover-expand" style="background-color:var(--light-gray)">#b5b5b5</div>
         </div>
-        <div style="display:flex;flex-direction:row;">
-          <div class="box size2x1" style="background-color:var(--primary-dark)">#2ca39e</div>
-          <div class="box size2x1" style="background-color:var(--primary-dark)">#2ca39e</div>
+        <div class="expand-box">
+          <div class="box hover-expand" style="background-color:var(--primary-dark)">#2ca39e</div>
+          <div class="box hover-expand" style="background-color:var(--gray)">#828282</div>
         </div>
-        <div style="display:flex;flex-direction:row;">
-          <div class="box size3x1" style="color:white;background-color:var(--primary-darker)">#1b6663</div>
-          <div class="box size1x1" style="color:white;background-color:var(--primary-darker)">#1b6663</div>
+        <div class="expand-box">
+          <div class="box hover-expand" style="color:white;background-color:var(--primary-darker)">#1b6663</div>
+          <div class="box hover-expand" style="color:white;background-color:var(--dark-gray)">#363636</div>
         </div>
       </div>
     </div>
     <div style="margin-left:300px;margin-top:250px;margin-bottom:250px">
-      <div class="box size1x1 rotate rotate90"  style="background-color:var(--red);">    #ca393e</div>
-      <div class="box size1x1 rotate rotate60"  style="background-color:var(--orange);"> #ca7d39</div>
-      <div class="box size1x1 rotate rotate30"  style="background-color:var(--yellow);"> #cac539</div>
-      <div class="box size1x1 rotate rotate0"   style="background-color:var(--lime);">   #86ca39</div>
-      <div class="box size1x1 rotate rotate330" style="background-color:var(--green);">  #3eca39</div>
-      <div class="box size1x1 rotate rotate300" style="background-color:var(--aqua);">   #39ca7d</div>
+      <div class="box size1x1 rotate rotate90"  style="background-color:var(--red);"    >#ca393e</div>
+      <div class="box size1x1 rotate rotate60"  style="background-color:var(--orange);" >#ca7d39</div>
+      <div class="box size1x1 rotate rotate30"  style="background-color:var(--yellow);" >#cac539</div>
+      <div class="box size1x1 rotate rotate0"   style="background-color:var(--lime);"   >#86ca39</div>
+      <div class="box size1x1 rotate rotate330" style="background-color:var(--green);"  >#3eca39</div>
+      <div class="box size1x1 rotate rotate300" style="background-color:var(--aqua);"   >#39ca7d</div>
       <div class="box size1x1 rotate rotate270" style="background-color:var(--primary);">#39cac4</div>
-      <div class="box size1x1 rotate rotate240" style="background-color:var(--navy);">   #3986ca</div>
-      <div class="box size1x1 rotate rotate210" style="background-color:var(--blue);">   #393eca</div>
-      <div class="box size1x1 rotate rotate180" style="background-color:var(--purple);"> #7d39ca</div>
-      <div class="box size1x1 rotate rotate150" style="background-color:var(--pink);">   #c539ca</div>
+      <div class="box size1x1 rotate rotate240" style="background-color:var(--navy);"   >#3986ca</div>
+      <div class="box size1x1 rotate rotate210" style="background-color:var(--blue);"   >#393eca</div>
+      <div class="box size1x1 rotate rotate180" style="background-color:var(--purple);" >#7d39ca</div>
+      <div class="box size1x1 rotate rotate150" style="background-color:var(--pink);"   >#c539ca</div>
       <div class="box size1x1 rotate rotate120" style="background-color:var(--magenta);">#ca3986</div>
     </div>
   </div>
